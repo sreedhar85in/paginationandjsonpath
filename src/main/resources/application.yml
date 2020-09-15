@@ -1,0 +1,18 @@
+---
+spring:
+  application:
+    name: tx-pagination
+  datasource:
+    druid:
+      initial-size: 1
+      max-active: 3
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:oracle:thin:@localhost:1521/PDBORCL
+    username: thor
+    password: MyPassword
+
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    generate-ddl: true
+    show-sql: true	
+    
